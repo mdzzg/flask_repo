@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+
+html, body, form, fieldset, h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  height: 100%;
+  overflow: visible;
+}
+
+body {
+  overflow: visible;
+  height: 100%;
+  color: #BFBFBF;
+  background-color: #3e3e3e;
+}
+
+a:link, a:visited {
+  color: #ffffff;
+}
+
+a:hover, a:active {
+  color: #ffffff;
+}
+
+table#tablemain {
+  height: 100%;
+}
+
+table.f_two td {
+  width: 50%;
+}
+
+table.f_three td {
+  width: 33%;
+}
+
+.contents { 
+  margin: 0 auto 25%;
+  width: 50%; 
+}
+
+.f_two .contents {
+  width: 75%;
+}
+
+.f_three .contents {
+  width: 87.5%;
+}
+
+.stitched {
+   padding: 50px 20px 25px;
+   margin: 10px;
+   max-width: 338px;
+   background: #252525;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 2px dashed #9D9D9D;
+   border-radius: 10px;
+}
+
+.f_three .stitched {
+  padding: 50px 5px;
+}
+
+.drop-img {
+  margin-bottom: 1rem;
+}
+
+.drop-img img {
+  max-width: 68px;
+}
+
+.drop-text {
+  font-weight: normal;
+  font-size: 135%;
+  letter-spacing: -1px;
+  min-height: 40px;
+}
+
+/* For some reason, IE scales the PNG's up 1 px, causing
+  them to appear fuzzy. The following mitigates, somewhat. */
+img[src$=".gif"], img[src$=".png"] {
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
